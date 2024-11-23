@@ -1,0 +1,17 @@
+.searchBarWrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px 0 0 5px;
+}
+.searchBtn {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 0 5px 5px 0;
+    background-color: #456cba;
+    color: white;
+}

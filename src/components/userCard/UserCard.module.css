@@ -1,0 +1,14 @@
+.userCard {
+   display: flex;
+   gap: 40px;
+   padding: 30px;
+   border-bottom: 1px solid #456cba;
+}
+.userCard img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.userInfo {
+
+}

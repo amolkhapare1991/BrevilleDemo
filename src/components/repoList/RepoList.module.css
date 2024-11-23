@@ -1,0 +1,12 @@
+.repoListWrapper li a{
+     color: black;
+     text-decoration: none;
+}
+
+.repoListWrapper li {
+    margin-bottom: 10px;
+}
+
+.repoListWrapper li :hover {
+    text-decoration: underline;;
+}
