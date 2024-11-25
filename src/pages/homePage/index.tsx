@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { fetchRepos, fetchUser } from "../../services/gitHubServices";
 import SearchBar from "../../components/searchBar";
 import UserCard from "../../components/userCard";
@@ -7,9 +7,9 @@ import styles from './HomePage.module.css'
 import { GitHubRepo, GitHubUser } from "../../types/gitHubTypes";
 
 const HomePage: React.FC = () => {
-  const [user, setUser] = React.useState<GitHubUser | null>(null);
-  const [repos, setRepos] = React.useState<GitHubRepo[]>([]);
-  const [error, setError] = React.useState<string | null>(null);
+  const [user, setUser] = useState<GitHubUser | null>(null);
+  const [repos, setRepos] = useState<GitHubRepo[]>([]);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSearch = async (username: string) => {
     try {

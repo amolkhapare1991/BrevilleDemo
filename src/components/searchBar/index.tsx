@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from './SearchBar.module.css'
 
 interface SearchBarProps {
@@ -6,7 +6,7 @@ interface SearchBarProps {
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
-  const [query, setQuery] = React.useState("");
+  const [query, setQuery] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
